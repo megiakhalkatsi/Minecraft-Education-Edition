@@ -5,6 +5,11 @@
 	src: url(../fonts/_!_kolhety_normal.ttf);
 }
 
+@font-face{
+	font-family: glaho;
+	src: url(../fonts/bpg_glaho.ttf);
+}
+
 #header {
 	background-image: linear-gradient(green, #36a236);
 	
@@ -27,6 +32,7 @@ header .signin a{
     justify-content: space-around; 
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: "ArchyEDT-Bold", sans-serif;
     /*border-radius: 10px;*/
    
 }
@@ -44,15 +50,36 @@ header .signin span {
 
 header .register span {
 	color: #fff;
+	font-size: 13px;
 	letter-spacing: 1px;
 	display: block;
 	text-align: right;
 	padding-bottom: 3px;
-	box-shadow: 2px 4px transparent;
-	transition: 1s;
+	box-shadow: 1px 2px transparent;
+	transition: 3s;
+	
 }
-header .register span:hover {
-	box-shadow: 5px 7px #5c3baf;
+header .register span:hover:after {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 40%;
+	position: absolute;
+	right: 15px;
+	box-shadow: 1px 2px #5c3baf;
+	transition: 3s;
+	animation-name: border;
+	animation-duration: 1s;
+
+}
+@keyframes border {
+	from{
+		width: 0;
+
+	}
+	to {
+		width: 40%;
+	}
 }
 header .logo {
 	text-align: center;
@@ -145,6 +172,7 @@ header .main-menu li a:hover {
 main {
 	position: relative;
 	overflow: hidden;
+	color: #333;
 	/*background-image: linear-gradient(green, black);*/
 }
 
@@ -192,21 +220,23 @@ main {
 	/*background-image: linear-gradient(#333333e3, #252525);*/
 }
 
-#lessons .video-lessons .blocks .block {
+ .video-lessons .blocks .block {
 	/*background: white;*/
 	/*border: 1px dotted black;*/
 	margin-bottom: 30px;
+	font-family: glaho;
+	letter-spacing: 1px;
 }
 
-#lessons .video-lessons .blocks .block .text h2 {
+.video-lessons .blocks .block .text h2 {
 	font-size: 18px;
 	color: black;
 }
-#lessons .video-lessons .blocks .block .text p {
+ .video-lessons .blocks .block .text p {
 	font-size: 14px;
 	color: black;
 }
-#lessons .video-lessons .blocks .block .video iframe {
+.video-lessons .blocks .block .video iframe {
 	width: 100%;
 	height: 200px;
 }
@@ -219,6 +249,9 @@ main {
 	padding: 5px;
 	margin-bottom: 5px;
 	display: inline-block;
+}
+.categories .category a {
+	color: #fff;
 }
  .categories .age {
 	background: #4e8330;
@@ -259,28 +292,36 @@ main {
 /*lessons section end*/
 
 /*activities/worlds section starts here*/
-#activities .worlds .world {
+ .worlds .world {
 	margin-bottom: 30px;
+	background: white;
+	font-family: glaho;
+	letter-spacing: 1px;
 }
-#activities .worlds {
-}
-#activities .worlds .world .img1 {
+
+.worlds .world .img1 {
 	width: 100%;
 	height: auto;
 }
-#activities .worlds .world .text h2 {
+.worlds .world .text h2 {
 	font-size: 18px;
 	color: black;
 }
-#activities .worlds .world .text p {
+.worlds .world .text p {
 	font-size: 14px;
 	color: black;
 }
 .categories .world-type {
 	background: #328162;
 }
+.categories .world-type a {
+	color: #fff;
+}
 .categories .game-mode {
 	background: #b33756;
+}
+.categories .game-mode a {
+	color: #fff;
 }
 /*activities/worlds section end*/
 
@@ -520,7 +561,6 @@ footer li a:hover{
 		align-items: center;
 	}
 	header .signin {
-
 	    display: none;
 	    right: 15px;
     	position: fixed;
@@ -580,4 +620,115 @@ footer li a:hover{
 	font-size: 12px;	
 }
 
+}
+
+
+/*worlds page starts here*/
+
+/*#featured-worlds {
+	background: #212529;
+	color: #fff;
+}
+*/
+#all-worlds {
+	background: #fff;
+	color: #333;
+	font-family: glaho;
+}
+
+#all-worlds .filter span{
+	color: #5c3baf;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+
+.search-text {
+	width: 100% !important;
+}
+
+.btn {/*
+	width: 100% !important;*/
+    /*color: #5c3baf;
+    background: transparent;
+   	line-height: 2; */
+}
+.flx {
+	display: flex;
+	justify-content: space-between;
+}
+.form-check-inline .form-check-input {
+	width: 30px;
+	height: 30px;
+}
+.world-types {
+	font-weight: bolder;
+}
+.world-type {
+	background-color: #328162;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+
+.world-type:active {
+    background-color: #084A35;
+}
+.world-type:hover{
+    background-color: #084A35;
+}
+.game_modes {
+	font-weight: bolder;
+}
+.game_mode {
+	background-color: #b33756;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+.game_mode:active {
+	background-color: #66122b;
+}
+.game_mode:hover {
+	background-color: #66122b;
+}
+.line .line_col{
+        background: linear-gradient(to bottom, #7abb55 0%, green 100%);
+        height: 6px;
+}
+/*.load-more{
+	margin-bottom: 20px;
+}
+.load-more a {
+	color: #5c3baf;
+	border: 2px solid #5c3baf;
+	padding: 10px;
+	
+}*/
+
+.load-more {
+	padding-bottom: 30px;
+	color: #5c3baf;
+	text-align: center;
+}
+.load-more a {
+	display: inline-block;
+	color: #5c3baf;
+	padding: 10px;
+	border: 2px solid #5c3baf;
+}
+
+.load-more a:hover {
+	color: #7abb55;
+	border-color: #7abb55;
 }
