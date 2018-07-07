@@ -153,6 +153,24 @@
 </section>
 <section id="forum_media" class="container-fluid forum_media">
 	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<h5>Showing <span>305</span> conversations</h5>
+			</div>
+			<div class="col-6 dropdown_filter">
+				<div class="btn-group">
+				  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Most recent activity
+				  </button>
+				  <div class="dropdown-menu dropdown-menu-right">
+				    <button class="dropdown-item" type="button">Newest-Oldest</button>
+				    <button class="dropdown-item" type="button">Oldest-Newest</button>
+				    <button class="dropdown-item" type="button">A-Z</button>
+				    <button class="dropdown-item" type="button">Z-A</button>
+				  </div>
+				</div>
+			</div>
+		</div>
 		<div class="row media_background">
 			<div class="col-12 col-sm-8 media">
 				  <img class="col-3" src="images/media_object.png" alt="Generic placeholder image">
@@ -318,7 +336,11 @@
 });	
 	});
 })(document, window, jQuery);
-
+  $(document).ready(function(){
+        $('.menu').click(function(){
+            $('.menu_list').toggleClass('active');
+        })
+    })
 </script>
 
     

@@ -638,6 +638,15 @@ footer li a:hover{
 	border: 1px solid #e0e0e0;
 	margin: 10px 0;
 }
+.forum_media {
+	padding-top: 15px;
+}
+.forum_media h5 span {
+	font-weight: bold;
+}
+.dropdown_filter {
+	text-align: right;
+}
 /*medis object style end*/
 
 
