@@ -646,6 +646,148 @@ footer li a:hover{
 		display: block !important;
 	}
 }*/
+/*start form section style*/
+.back_icon i {
+	font-size: 18px;
+	padding-right: 5px;
+	color: #333;
+}
+.back_icon a {
+	font-size: 18px;
+	color: #333;
+}
+.back_icon a:hover {
+	color: #5c3baf;
+}
+.back_icon :hover i {
+	color: #5c3baf;
+}
+.back_icon {
+	margin: 50px 0 30px;
+}
+.filter {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.filter i {
+	padding-left: 15px;
+	color: #5c3baf;
+}
+.filter a {
+	 color: #5c3baf;
+	 font-weight: 5px;
+	 font-weight: bold;
+}
+.filter a:hover {
+	color: #5c3baf;
+}
+[type=submit] {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ad95ea;
+	cursor: pointer;
+}
+[type=submit]:hover {
+	background-color: #e6e3ef;
+}
+.search {
+	margin: 30px 0 50px;
+}
+.find p {
+	display: inline-block;
+}
+.form {
+	padding-bottom: 100px;
+	
+}
+.find a {
+	padding: 10px 20px;
+	background: linear-gradient(#8f6ada, #5c3baf);
+	cursor: pointer;
+}
+.find a:hover {
+	background: linear-gradient(#7abb55, #4E8330);
+}
+/*end form style*/
+.forum_media {
+	border-top: 8px solid #DCDCDC;
+	background: #f2f2f2;
+}
+.media-body a {
+	display: block;
+	color: #fff;
+	margin-top: 20px;
+}
+.media-body p {
+	display: inline-block;
+    padding: 6px 20px;
+    background: #8b66d7;
+}
+.media {
+	padding: 20px 0;
+}
+.media-body h5 a {
+	margin: 0;
+	color: #333;
+}
+.right_media .fa-angle-double-down {
+	font-size: 30px;
+	font-weight: bold;
+	color: #5daedc;
+	margin-right: 10px;
+	display: inline;
+}
+.right_media span {
+	font-size: 30px;
+	color: #333;
+}
+.right_media a {
+	font-size: 30px;
+}
+.right_media {
+	padding: 20px 0;
+}
+.right_media i:hover {
+	color: #315e77;
+}
+.right_media .fa-comments-o{
+	font-size: 30px;
+	margin-right: 10px;
+	color: #5daedc;
+	display: inline;
+}
+.right_media .fa-comments-o:hover {
+	color: #315e77;
+}
+.coment {
+	text-align: right;
+}
+.right_media .name {
+	text-align: center;
+}
+.right_media .name {
+	font-size: 20px;
+}
+.right_media .author {
+	text-align: center;
+}
+.media_background {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	margin: 10px 0;
+}
+.forum_media {
+	padding-top: 15px;
+}
+.forum_media h5 span {
+	font-weight: bold;
+}
+.dropdown_filter {
+	text-align: right;
+}
+/*medis object style end*/
 
 
 @media screen and (max-width: 992px) {
