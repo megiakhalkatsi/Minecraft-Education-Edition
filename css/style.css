@@ -770,6 +770,12 @@ footer li a:hover{
 .category_content h4 {
 	padding-bottom: 20px;
 }
+.content_forum .content_small {
+	margin-left: 50px;
+}
+.content_forum .character {
+	text-align: right;
+}
 .reply {
 	text-align: right;
 	padding-right: #5c3baf;
