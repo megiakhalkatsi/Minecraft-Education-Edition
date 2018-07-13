@@ -276,6 +276,14 @@ header .main-menu li a:hover {
 	font-family: kolhety;
 	font-size: 20px;
 }
+#featured-worlds{
+	font-family: glaho;
+	background-image: url(../images/back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
 #lessons {
 	background-image: url(../images/back.jpg);
 	background-size: cover;
@@ -290,10 +298,8 @@ header .main-menu li a:hover {
 	background-repeat: no-repeat;
 	color: #fff;
 }
-/*#featured-lessons .video-lessons .blocks .block {
-	border: 2px solid black; 
-}
-*/
+
+
 #all-lessons {
 	font-family: glaho;
 }
@@ -372,7 +378,7 @@ blue-comment.svg
 }
 
 .categories .category {
-	padding: 5px;
+	padding: 7px;
 	margin-bottom: 5px!important;
 	margin-right: 2px!important;
 	display: inline-block;
@@ -421,7 +427,6 @@ blue-comment.svg
 /*activities/worlds section starts here*/
  .worlds .world {
 	margin-bottom: 30px;
-	background: white;
 	font-family: glaho;
 	letter-spacing: 1px;
 	/*border: 4px double #8f6ada;*/
@@ -606,51 +611,39 @@ blue-comment.svg
 footer {
 	background: black;
 	color: #fff;
+	font-family: glaho;
+}
+footer li {
+	margin-right: 10px;
 }
 footer li a{
 	font-weight: bold;
-    color:#fff;
-    font-size: 25px;
+    color: #8f6ada;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #8f6ada;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 footer li a:hover{
 	color: #fff;
+	background:linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
+	border-color:#5c3baf;
+	transition: 0.5s;
+}
+footer .geolab img {
+	width: 80px;
+	height: 80px;
+}
+footer .contact span {
+	font-size: 14px;
 }
 
-/*.pollygon:nth-of-type(1){
-	top: 5%;
-	right: 30%;
-	opacity: 0.4;
-}
-.pollygon:nth-of-type(2){
-	top: 40%;
-	right: 35%;
-	opacity: 0.4;
-}
-.pollygon:nth-of-type(3){
-	top: 25%;
-	left: 75%;
-	opacity: 0.4;
-}
-.pollygon:nth-of-type(4){
-	top: 40%;
-	left: 20%;
-	opacity: 0.4;
-}*/
 
 
-/*@media screen and ( max-width: 1200px ){
-	header .social-icons li a i {
-		font-size: 18px;
-		width: 40px;
-		height: 40px;
-	}
-}
-*/
-/*@media screen and ( min-width: 992px ){
-	.main-menu{
-		display: block !important;
-	}
-}*/
 /*start form section style*/
 .back_icon i {
 	font-size: 18px;
@@ -1117,7 +1110,18 @@ footer li a:hover{
 }
  .video-lesson {
 	width: 100%;
-	height: 400px;
+	height: 450px;
+}
+.video-lesson .world-image {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 0;
+	overflow: hidden;
+}
+.video-lesson .world-image img{
+	width: 100%;
+	height: 100%;
 }
  .video-lesson .video {
 	width: 100%;
@@ -1128,6 +1132,7 @@ footer li a:hover{
  .video-lesson .video .youtube-player{
 	width: 100%;
 	height: 100%;
+	padding: 0;
 }
 
  .video-lesson .resource-info {
@@ -1135,9 +1140,181 @@ footer li a:hover{
 	height: 100%;
 	background: #fff;
 	color: #333;
+	padding: 0!important;
 	/*overflow: hidden;*/
 }
-#inner-page .video-lesson .resource-info .text {
+#inner-page .video-lesson .resource-info .inner-text {
 	padding: 10px;
 	font-family: glaho;
+}
+
+.inner-icons .inner-like {
+	position: absolute;
+	bottom: 10px;
+	left: 5%;
+}
+.inner-icons .inner-comment {
+	position: absolute;
+	bottom: 10px;
+	left: 30%;
+}
+.inner-icons span {
+	padding-left: 10px;
+}
+.inner-icons .download-icon img {
+	width: 30px;
+	height: 30px;
+	display: inline-block!important;
+}
+#download-img:hover {
+	content: url('../images/download-green.svg');
+}
+.inner-icons .download-icon {
+	position: absolute;
+	bottom: 10px;
+	left: 60%;
+}
+@media screen and (max-width: 992px){
+	.inner-icons .inner-comment{
+		left: 50%;
+	}
+	.video-lesson {
+	height: auto;
+	}
+	.inner-icons .download-icon {
+	left:80%;
+	}
+
+}
+
+#Submitted .submitted {
+	font-family: glaho;
+}
+
+#Submitted .submitted-img {
+	display: inline-block!important;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+#Submitted .submitted .author {
+	color: #5c3baf;
+	font-weight: bold;
+}
+#Submitted .submitted .author:hover {
+	color: #72b24e;
+}
+#Submitted  .submitted-date {
+	text-align: center;
+	padding-top: 15px;
+}
+@media screen and (max-width: 992px){
+	#Submitted  .submitted-date {
+	text-align: center;
+	}
+	}
+#lesson-plan-description{
+	background-color: #f2f2f2;
+	height: auto;
+}
+/*#lesson-plan-description .description-button{
+	text-align: center;
+}*/
+#lesson-plan-description .description-button {
+	display: flex;
+	justify-content: space-around;
+}
+#lesson-plan-description .discussion {
+	display: flex;
+	justify-content: space-around;
+}
+#lesson-plan-description .tabs-list a {
+	padding: 20px 50px;
+	background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
+	color: #fff;
+	border-radius: 20px;
+}
+
+#lesson-plan-description .tabs-list a:active{
+	background:green;
+}
+#lesson-plan-description .tabs-list a:hover{
+	background: green;
+}
+#lesson-plan-description .download-asset img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+
+
+#discussion {
+	font-family: glaho;
+}
+#discussion .discussion {
+	width: 100%;
+	padding:20px 10px;
+	border: 1px solid #f2f2f2;
+}
+#discussion .discussion .discussion-img img {
+	display: inline-block!important;
+	width: 75px;
+	height: 70px;
+	margin-right: 10px;
+}
+#discussion .discussion .discussion-author {
+	color: #5c3baf;
+	font-weight: bold;
+	font-size: 18px;
+}
+#discussion .discussion .discussion-author:hover {
+	color: #72b24e;
+}
+#discussion .discussion .reply a{
+	color:#5c3baf;
+	font-weight: bold;
+}
+#discussion .discussion .reply a:hover{
+	color: #72b24e;
+}
+
+.discussion-signin a{
+	width: 100%;
+    background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
+    text-align: center;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "ArchyEDT-Bold", sans-serif;
+    color: #fff;
+	letter-spacing: 1px;   
+}
+.discussion-signin a:hover {
+	background:linear-gradient(to bottom, #333333e3 0%, #252525 100%);
+	border-color: #5c3baf;
+	transition: 0.5s; 
+	color: #fff;
+	border:2px solid #8f6ada;
+}
+	
+.watch-video a {
+	font-weight: bold;
+    display: block;
+    width: 100%;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
+    color: #fff;
+}
+.watch-video a:hover {
+	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
+	/*background: #7abb55;*/
+	transition: 3s;
+	color: #fff;
 }
