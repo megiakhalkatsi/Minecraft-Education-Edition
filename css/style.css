@@ -227,6 +227,13 @@ header .main-menu li a:hover {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%); }
+
+
+
+
+
+
+
 @media screen and (max-width: 992px) {
 	.main-slider-image {
 		height: auto;
@@ -648,11 +655,11 @@ footer .contact span {
 .back_icon i {
 	font-size: 18px;
 	padding-right: 5px;
-	color: #333;
+	color: #5c3baf;
 }
 .back_icon a {
 	font-size: 18px;
-	color: #333;
+	color: #5c3baf;
 }
 .back_icon a:hover {
 	color: #5c3baf;
@@ -708,6 +715,128 @@ footer .contact span {
 .find a:hover {
 	background: linear-gradient(#7abb55, #4E8330);
 }
+.gray_bg {
+	background-image: url(../images/Grey_BG.png);
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+.form_background h1 a {
+	text-transform: uppercase;
+	color: #333;
+	margin: 10px 0;
+}
+.form_background h1 {
+	margin: 15px 0;
+}
+.media_background span {
+	display: block;
+	padding: 10px 0 30px;
+}
+.upload {
+	text-align: right;
+}
+.submit_data {
+	text-align: right;
+}
+.submit a {
+	color: #5c3baf;
+}
+.discussions {
+	background: #d4d3d3;
+}
+.content_forum{
+	background: #f2f2f2;
+	padding: 50px 0;
+}
+.category_content {
+	background: #fff;
+	padding: 20px 0;
+	margin-bottom: 30px;
+	   border: 1px solid #e4e3e3;
+}
+.category_content h4 span{
+	font-size: 15px;
+}
+.btn-default {
+	width: 100px;
+}
+.sub_form {
+	text-align: right;
+}
+.category_content .inner_form {
+	text-align: right;
+	padding-right: 40px;
+}
+.category_content h4 {
+	padding-bottom: 20px;
+}
+.content_forum .content_small {
+	margin-left: 50px;
+}
+.content_forum .character {
+	text-align: right;
+}
+.reply {
+	text-align: right;
+	padding-right: #5c3baf;
+}
+.reply a {
+	color: #5c3baf;
+	padding-right: 40px;
+}
+.reply a:hover {
+	color: green;
+}
+.profile_submit {
+	padding: 10px 0;
+}
+.submit_text{
+	line-height: 60px;
+}
+.by {
+	background: #fff;
+	margin: 0;
+}
+.upload i {
+	color: #5c3baf;
+}
+.upload i:hover {
+	color: green;
+}
+
+.form_background {
+	background: #fff;
+}
+.inner_form {
+	background: #fff;
+	padding: 30px 0;
+}
+.inner_form h6  {
+	padding: 5px 10px;
+	background: #ff4a73;
+	display: inline;
+	color: #fff;
+}
+.form_text {
+	padding: 30px 0;
+}
+.inner_form h1 a {
+	color: #333;
+	text-transform: uppercase;
+}
+.inner_form h1 {
+	padding-bottom: 20px;
+}
+.inner_form i {
+	font-size: 30px;
+	padding-right: 20px;
+}
+.inner_form span {
+	font-size: 30px;
+}
+
+
+
 /*end form style*/
 .forum_media {
 	border-top: 8px solid #DCDCDC;
@@ -880,6 +1009,7 @@ footer .contact span {
 .title1 h1 {
 	font-size: 30px;
 }
+
 }
 
 @media screen and ( max-width: 769px ){
