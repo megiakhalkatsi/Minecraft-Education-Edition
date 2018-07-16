@@ -215,7 +215,7 @@ header .main-menu li a:hover {
 }
 
 .main-slider-image {
-  height: 100vh;
+  height: 80vh;
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
@@ -633,7 +633,7 @@ footer li a{
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: flex!important;
 }
 footer li a:hover{
 	color: #fff;
@@ -1366,10 +1366,10 @@ footer .contact span {
 }
 
 #lesson-plan-description .tabs-list a:active{
-	background:green;
+	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
 }
 #lesson-plan-description .tabs-list a:hover{
-	background: green;
+	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
 }
 #lesson-plan-description .download-asset img{
 	display: inline-block;
@@ -1408,7 +1408,15 @@ footer .contact span {
 #discussion .discussion .reply a:hover{
 	color: #72b24e;
 }
-
+#discussion .category_content .btn-default{
+	font-weight: bolder;
+	background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
+	color: #fff;
+	transition: 0.5s;
+}
+#discussion .category_content .btn-default:hover {
+	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
+}
 .discussion-signin a{
 	width: 100%;
     background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
@@ -1444,7 +1452,6 @@ footer .contact span {
 }
 .watch-video a:hover {
 	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
-	/*background: #7abb55;*/
 	transition: 3s;
 	color: #fff;
 }
