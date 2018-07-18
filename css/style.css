@@ -34,7 +34,7 @@ a.alert_message:hover{color : grey;}
 	display: inline;
 }
 .navbar .file_text .ball {
-	border: 1px solid gray;
+	border: 2px solid #fff;
 	border-radius: 50%;
 	width: 23px;
 	height: 23px;
@@ -46,7 +46,8 @@ a.alert_message:hover{color : grey;}
 .navbar .file_text  span {
 	font-size: 10px;
 	display: block;
-	margin-top: 4px;
+	margin-top: 3px;
+	color: #fff;
 }
 /*end notification style*/
 
