@@ -36,8 +36,8 @@ a.alert_message:hover{color : grey;}
 .navbar .file_text .ball {
 	border: 2px solid #fff;
 	border-radius: 50%;
-	width: 23px;
-	height: 23px;
+	width: 20px;
+	height: 20px;
 	position: absolute;
 	right: 0;
 	text-align: center;
@@ -46,7 +46,7 @@ a.alert_message:hover{color : grey;}
 .navbar .file_text  span {
 	font-size: 10px;
 	display: block;
-	margin-top: 3px;
+	margin-top: 1px;
 	color: #fff;
 }
 /*end notification style*/
@@ -1573,3 +1573,4 @@ footer .contact span {
 	transition: 3s;
 	color: #fff;
 }
+@media screen and (max-width: 576px){
