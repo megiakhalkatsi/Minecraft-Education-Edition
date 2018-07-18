@@ -43,6 +43,11 @@ a.alert_message:hover{color : grey;}
 	text-align: center;
 	background: red;
 }
+.navbar .file_text  span {
+	font-size: 10px;
+	display: block;
+	margin-top: 4px;
+}
 /*end notification style*/
 
 
