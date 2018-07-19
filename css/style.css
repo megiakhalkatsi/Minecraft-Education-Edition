@@ -471,6 +471,9 @@ blue-comment.svg
 .categories .subject {
 	background: #5faedc;
 }
+.content_forum .small_reply {
+	margin-left: 50px;
+}
 .view a{
 	/*margin-top: 20px;*/
 	font-weight: bold;
@@ -866,6 +869,9 @@ footer .contact span {
 }
 .submit_text{
 	line-height: 60px;
+}
+.submit_text img {
+	width: 100%;
 }
 .by {
 	background: #fff;
@@ -1541,6 +1547,9 @@ footer .contact span {
 	background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
 	color: #fff;
 	transition: 0.5s;
+}
+.content_forum .category_content img {
+	width: 100%;
 }
 #discussion .category_content .btn-default:hover {
 	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
