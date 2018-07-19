@@ -4,7 +4,7 @@ li.alert_li {
   font-size: 11px; 
   color:grey;
   z-index: 1000;
-  padding:10px 0px 2px 0px;
+  padding:5px 0px 5px 0px;
   border-bottom: thin solid #c0c0c0;
 }
 .turn_off_alert{float:right;margin-bottom :1px;}
@@ -13,8 +13,18 @@ a.alert_message:hover{color : grey;}
 #news i {
 	color: #fff;
 }
+.popover-body {
+	background: #e9ece3;
+	font-family: "sans-serif";
+}
+.popover-header {
+	font-family: "ArchyEDT-Bold", sans-serif;
+}
 #news i:hover {
 	color: #ded3d3;
+}
+#news i {
+	font-size: 24px;
 }
 .unstyled {
 	padding-left: 0;
@@ -25,7 +35,7 @@ a.alert_message:hover{color : grey;}
 }
 .alert_li a:hover {
 	text-decoration: none;
-	color: #1eaf58;
+	color: #333;
 }
 .navbar .file_text {
 	padding:0;
