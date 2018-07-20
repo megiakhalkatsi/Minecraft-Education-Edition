@@ -473,6 +473,10 @@ blue-comment.svg
 }
 .content_forum .small_reply {
 	margin-left: 50px;
+	margin-bottom: 10px;
+}
+.content_forum h4 {
+	font-size: 17px;
 }
 .view a{
 	/*margin-top: 20px;*/
@@ -1030,11 +1034,7 @@ footer .contact span {
 	    padding-bottom: 10px;
 	    letter-spacing: 1px;
 	}
-	.mobile-menu-opener{
-		display: block;
-		position: relative;
-    	z-index: 100;
-	}
+
 
 	body.menu-active .main-menu{
 		display: block !important;
