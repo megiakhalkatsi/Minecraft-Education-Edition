@@ -500,12 +500,21 @@ blue-comment.svg
 	color: #fff;
 }
 
-.slick-prev,
+.slick-prev {
+	background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%) !important;
+	    width: 45px !important;
+	    height: 50px !important;
+	    z-index: 10;
+	    margin-left: -20px;
+	    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
 .slick-next{
 	    background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%) !important;
 	    width: 45px !important;
 	    height: 50px !important;
 	    z-index: 10;
+	    margin-right: -20px;
 	    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
