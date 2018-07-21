@@ -451,6 +451,9 @@ blue-comment.svg
 	border: none;
 	background-size: cover;
 }
+.blocks .img1 img {
+	width: 100%;
+}
 .categories {
 	color:#fff;
 	letter-spacing: 1px;
@@ -521,6 +524,9 @@ blue-comment.svg
 .worlds .world .img1 {
 	width: 100%;
 	height: auto;
+}
+.world .img1 img {
+	width: 100%;
 }
 .worlds .world .text h2 {
 	font-size: 18px;
