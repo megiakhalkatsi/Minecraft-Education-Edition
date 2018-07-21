@@ -844,6 +844,9 @@ footer .contact span {
 .category_content h4 span{
 	font-size: 15px;
 }
+.category_content .reply_click {
+	cursor: pointer;
+}
 .btn-default {
 	width: 100px;
 }
