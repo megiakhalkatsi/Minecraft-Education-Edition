@@ -1185,10 +1185,10 @@ footer .contact span {
 
 
 .subject:active {
-    background-color: #3F5A6B
+    background-color: #3F5A6B;
 }
 .subject:hover{
-    background-color: #3F5A6B
+    background-color: #3F5A6B;
 }
 .game_modes {
 	font-weight: bolder;
@@ -1509,4 +1509,58 @@ footer .contact span {
 	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
 	transition: 3s;
 	color: #fff;
+}
+
+#inner-teachers{
+	font-family: glaho!important;
+}
+#inner-teachers .breadcrumbs-link {
+	color: #5c3baf!important;
+	font-weight: bolder;
+}
+#inner-teachers .breadcrumbs-link:hover {
+	color: green!important;
+}
+#inner-teachers .breadcrumbs-link span {
+    width: 12px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+#inner-teachers .user-image img {
+		width: 100%;
+		height: auto;
+}
+
+#inner-teachers .user-name {
+		font-weight: bolder;
+}
+#inner-teachers .user-role h4{
+	font-weight: bold;
+}
+#inner-teachers .user-ages h4{
+	font-weight: bold;
+}
+#inner-teachers .user-subjects h4{
+	font-weight: bold;
+}
+.roles {
+	font-weight: bolder;
+}
+.tile-role{
+	background-color: #3d5a6b;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+.tile-role:active {
+    background-color: #2d4554;
+}
+.tile-role:hover{
+    background-color: #2d4554;
 }
