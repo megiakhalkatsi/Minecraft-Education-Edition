@@ -1,72 +1,3 @@
-/*start notification style*/
-.alert_list{font-size: 11px; color:grey;}
-li.alert_li {
-  font-size: 11px; 
-  color:grey;
-  z-index: 1000;
-  padding:5px 0px 5px 0px;
-  border-bottom: thin solid #c0c0c0;
-}
-.turn_off_alert{float:right;margin-bottom :1px;}
-a.alert_message{color : grey;}
-a.alert_message:hover{color : grey;}
-#news i {
-	color: #fff;
-}
-.popover-body {
-	background: #e9ece3;
-	font-family: "sans-serif";
-}
-.popover-header {
-	font-family: "ArchyEDT-Bold", sans-serif;
-}
-#news i:hover {
-	color: #ded3d3;
-}
-#news i {
-	font-size: 24px;
-}
-.unstyled {
-	padding-left: 0;
-	list-style-type: none;
-}
-.alert_li a {
-	color: gray;
-}
-.alert_li a:hover {
-	text-decoration: none;
-	color: #333;
-}
-.navbar .file_text {
-	padding:0;
-}
-.navbar .file_text a {
-	display: inline;
-}
-.navbar .file_text .ball {
-	border: 2px solid #fff;
-	border-radius: 50%;
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	background: red;
-}
-.navbar .file_text  span {
-	font-size: 10px;
-	display: block;
-	margin-top: 1px;
-	color: #fff;
-}
-/*end notification style*/
-
-
-
-
-
-
-
 @import url('reset.css');
 
 @font-face{
@@ -178,9 +109,6 @@ header .social-icons li a i:hover {
 	font-size: 20px;
     color: #4ca1cc;
     line-height: 40px; 
-}
-.prof_im img{
-	width: 100%;
 }
 .dropbtn {
     background-color: #4CAF50;
@@ -451,9 +379,6 @@ blue-comment.svg
 	border: none;
 	background-size: cover;
 }
-.blocks .img1 img {
-	width: 100%;
-}
 .categories {
 	color:#fff;
 	letter-spacing: 1px;
@@ -473,13 +398,6 @@ blue-comment.svg
 }
 .categories .subject {
 	background: #5faedc;
-}
-.content_forum .small_reply {
-	margin-left: 50px;
-	margin-bottom: 10px;
-}
-.content_forum h4 {
-	font-size: 17px;
 }
 .view a{
 	/*margin-top: 20px;*/
@@ -533,9 +451,6 @@ blue-comment.svg
 .worlds .world .img1 {
 	width: 100%;
 	height: auto;
-}
-.world .img1 img {
-	width: 100%;
 }
 .worlds .world .text h2 {
 	font-size: 18px;
@@ -793,23 +708,9 @@ footer .contact span {
 [type=submit]:hover {
 	background-color: #e6e3ef;
 }
-.search {
-	margin: 30px 0 50px;
-}
-.find p {
-	display: inline-block;
-}
 .form {
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	
-}
-.find a {
-	padding: 10px 20px;
-	background: linear-gradient(#8f6ada, #5c3baf);
-	cursor: pointer;
-}
-.find a:hover {
-	background: linear-gradient(#7abb55, #4E8330);
 }
 .gray_bg {
 	background-image: url(../images/Grey_BG.png);
@@ -853,9 +754,6 @@ footer .contact span {
 .category_content h4 span{
 	font-size: 15px;
 }
-.category_content .reply_click {
-	cursor: pointer;
-}
 .btn-default {
 	width: 100px;
 }
@@ -891,9 +789,6 @@ footer .contact span {
 }
 .submit_text{
 	line-height: 60px;
-}
-.submit_text img {
-	width: 100%;
 }
 .by {
 	background: #fff;
@@ -1017,9 +912,7 @@ footer .contact span {
 }
 /*medis object style end*/
 
-.logo a {
-	display: block;
-}
+
 @media screen and (max-width: 992px) {
 	header .nav1 .navbar {
 		display: none;
@@ -1052,7 +945,11 @@ footer .contact span {
 	    padding-bottom: 10px;
 	    letter-spacing: 1px;
 	}
-
+	.mobile-menu-opener{
+		display: block;
+		position: relative;
+    	z-index: 100;
+	}
 
 	body.menu-active .main-menu{
 		display: block !important;
@@ -1110,6 +1007,191 @@ footer .contact span {
 }
 
 }
+
+/*start header_notification stule*/
+/*start notification style*/
+/*start notification style*/
+.alert_list{font-size: 11px; color:grey;}
+li.alert_li {
+  font-size: 11px; 
+  color:grey;
+  z-index: 1000;
+  padding:5px 0px 5px 0px;
+  border-bottom: thin solid #c0c0c0;
+}
+.turn_off_alert{float:right;margin-bottom :1px;}
+a.alert_message{color : grey;}
+a.alert_message:hover{color : grey;}
+#header_notification i {
+	color: #fff;
+}
+.popover-body {
+	background: #e9ece3;
+	font-family: "sans-serif";
+}
+.popover-header {
+	font-family: "ArchyEDT-Bold", sans-serif;
+}
+#header_notification i:hover {
+	color: #ded3d3;
+}
+#header_notification i {
+	font-size: 24px;
+}
+.unstyled {
+	padding-left: 0;
+	list-style-type: none;
+}
+.alert_li a {
+	color: gray;
+}
+.alert_li a:hover {
+	text-decoration: none;
+	color: #333;
+}
+.navbar .file_text {
+	padding:0;
+}
+.navbar .file_text a {
+	display: inline;
+}
+.navbar  .file_text .ball {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	background: red;
+}
+.navbar .file_text  span {
+	font-size: 10px;
+	display: block;
+	margin-top: 1px;
+	color: #fff;
+}
+/*end header_notification style*/
+/*start inner diskussiom style form page*/
+#inner_discussions {
+    background: #d4d3d3;
+}
+#inner_discussions .small_reply {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+#inner_discussions .category_content h4 {
+    padding-bottom: 20px;
+}
+#inner_discussions .content_forum h4 {
+    font-size: 17px;
+}
+#inner_discussions .category_content .reply_click {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and ( max-width: 769px ){
 
@@ -1358,6 +1440,7 @@ footer .contact span {
         height: 6px;
 }
 .text {
+	height: 170px;
 	overflow: hidden;
 }
 .categories {
@@ -1566,9 +1649,6 @@ footer .contact span {
 	color: #fff;
 	transition: 0.5s;
 }
-.content_forum .category_content img {
-	width: 100%;
-}
 #discussion .category_content .btn-default:hover {
 	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
 }
@@ -1610,4 +1690,3 @@ footer .contact span {
 	transition: 3s;
 	color: #fff;
 }
-@media screen and (max-width: 576px){

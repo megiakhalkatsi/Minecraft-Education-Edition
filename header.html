@@ -77,30 +77,9 @@
 					<div class="col-3">
 					 	<div class="row">
 					 		<div class="col-2 file_text">
-					 			<div class="wrapper">
-            <div class="notification">
-                <i class="fa fa-bell-o"></i>
-                <div class="notify-count count1 common-count" count="0">
-                    <div class="value">0</div>
-                </div>
-            </div>
-            <div class="notification-dropdown dd">
-                <div class="arrow-up"></div>
-                <div class="header">
-                    <div class="container">
-                        <div class="text fl">Notifications</div>
-                        <div class="notify-count common-count count2 fl" count="0">
-                            <div class="value">0</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="items">
-
-                </div>
-            </div>
-        </div>
+					 			<a href="#"><i class="fa fa-file-text-o"></i></a>
 					 		</div>
-					 		<div class="col-3 prof_im">
+					 		<div class="col-3">
 					 			<a href="#"><img src="images/media_object.png"></a>
 					 		</div>
 					 		<div class="col-7 profiledrop">
@@ -155,145 +134,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
   <script src="js/jquery.js"></script>
-<script type="text/javascript">
-	/**
- * Created by prabhat on 10/22/15.
- */
 
-var initial_data = [
-    {
-        text : 'likes your photo',
-        name : 'Abhijeet',
-        image : '<img src="images/media_object.png">',
-        read : false
-    }
-]
-
-var notifications = [
-    {
-        text : 'commented on an item you liked',
-        name : 'Akhil Varma',
-        image : 'https://scontent.fdel1-2.fna.fbcdn.net/hprofile-xpf1/v/t1.0-1/c37.0.148.148/p148x148/12065771_10207311993455299_3991813075154734857_n.jpg?oh=06be1d21cb52f4e0edafc8c2c7730334&oe=56899CB5'
-    },
-    {
-        text : 'liked your post',
-        name : 'Dhruv Srivastav',
-        image : 'https://scontent.fdel1-2.fna.fbcdn.net/hprofile-xaf1/v/t1.0-1/p148x148/10612713_312244522304144_8280921939613613590_n.jpg?oh=ee7b001ed77ce685657c10063f6d45be&oe=56889109'
-    }
-]
-
-$(document).ready(function(){
-
-    // this is a self-invoked function called initially to render the notification data, checks if any data present in the local storage, otherwise renders the new data from array "initial_data"
-    (function(){
-
-        if(localStorage['notification']){
-            var data = JSON.parse(localStorage['notification'])
-        }else{
-            data = initial_data
-        }
-
-        var count = 0
-
-        for(var a=0;a<data.length;a++) {
-            var item = data[a]
-            var html = $('<div class="list-item noti">\
-                            <div class="image fl">\
-                                <img src="' + item['image'] + '">\
-                            </div>\
-                            <div class="text fl"><b class="name fl">' + item['name'] + '</b>' + item['text'] + '</div>\
-                        </div>');
-            $(html).data('notification', item)
-//            console.log(item['read'])
-            if(!item['read']){
-                count = count + 1
-            }else{
-                $(html).addClass('background-white')
-            }
-            $(document).find('.notification-dropdown .items').append(html)
-        }
-//        $(document).find('.notify-count .value').text(count)
-//        $(document).find('.notify-count').attr('count',count)
-        set_notification(count)                                         // sets the notification counter
-        save_localdata()                                                // updates local storage
-
-    })();
-
-    // click on notification bell
-    $('.notification').click(function(){
-        if(!$(document).find('.notification-dropdown').hasClass('dd')){
-            hide_dropdown()
-        }else{
-            $('.notification-dropdown').removeClass('dd').addClass('dropdown-transition')
-//            $(document).find('.notify-count .value').text(0)
-//            $(document).find('.notify-count').attr('count',0)
-            set_notification(0)
-            save_localdata()
-        }
-    })
-
-
-    // handler to close dropdown on clicking outside of it
-    $(document).on('click',function(e){
-        var target = $(e.target)
-        if(!target.closest('.notification').length && !target.closest('.dropdown-transition').length){
-            if(!$(document).find('.notification-dropdown').hasClass('dd')){
-                hide_dropdown()
-            }
-        }
-    })
-
-    // function to close dropdown and setting notification count to 0
-    function hide_dropdown(){
-        $(document).find('.notification-dropdown').removeClass('dropdown-transition').addClass('dd')
-        $(document).find('.notification-dropdown').find('.list-item').addClass('background-white')
-//        $(document).find('.notify-count .value').text(0)
-//        $(document).find('.notify-count').attr('count',0)
-        set_notification(0)
-        save_localdata()
-    }
-
-
-    // function to update local storage
-    function save_localdata(){
-        var list = []
-
-        $(document).find('.notification-dropdown .items .list-item').each(function(i,e){
-            var data = $(this).data('notification')
-            var new_data = {
-                text : data['text'],
-                name : data['name'],
-                image : data['image']
-            }
-            if($(this).hasClass('background-white') || !$(document).find('.notification-dropdown').hasClass('dd')){
-                new_data['read'] = true
-            }else{
-                new_data['read'] = false
-            }
-//            console.log(new_data['read'])
-            list.push(new_data)
-        })
-        localStorage.removeItem('notification')
-        localStorage.setItem("notification", JSON.stringify(list))
-
-    }
-
-
-    //function to update notification counter
-    function set_notification(count){
-        $(document).find('.notify-count').attr('count',count)
-        $(document).find('.notify-count .value').text(count)
-
-        if(count > 0){
-            document.title = '('+count+') - Wingify notification center'                // adding notification count in window title, incase the user is on some other tab.
-        }else{
-            document.title = 'Wingify notification center'
-        }
-    }
-
-})
-
-</script>
 	<script>
 	function toggleMenu(){
 		//$("body").toggleClass("menu-active");
