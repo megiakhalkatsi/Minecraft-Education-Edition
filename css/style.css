@@ -1744,3 +1744,83 @@ a.alert_message:hover{color : grey;}
 .tile-role:hover{
     background-color: #2d4554;
 }
+
+
+
+/*user profile page*/
+
+
+.edit-profile {
+	padding-bottom: 30px;
+	color: #5c3baf;
+	text-align: center;
+}
+.edit-profile a {
+	display: inline-block;
+	color: #5c3baf;
+	padding: 10px;
+	border: 2px solid #5c3baf;
+}
+
+.edit-profile a:hover {
+	color: #7abb55;
+	border-color: #7abb55;
+}
+#edit-profile {
+	font-family: glaho;
+}
+#edit-profile .user-personalData .avatar-image img{
+width: 165px;
+height: 165px;
+margin-bottom: 20px!important;
+display: block;
+}
+/*.avatar-container {
+	margin:auto;
+}*/
+/*@media screen and (max-width: 992px) {
+	#edit-profile .user-personalData .avatar-image img{
+	
+	}
+}*/
+#edit-profile .form-control{
+	width: 100%!important;
+	height: 55px;
+	font-size: 18px;
+}
+
+#edit-profile .form-header span{
+	font-family: glaho;
+	font-size: 46px;
+}
+
+#edit-profile .user-roles span{
+	font-size: 24px;
+}
+
+#edit-profile .user-biography span{
+	font-size: 24px;
+}
+#edit-profile .user-biography .form-control{
+	height: 200px!important;
+}
+
+#edit-profile .profile-update a{
+	/*margin-top: 20px;*/
+	font-weight: bold;
+    display: block;
+    width: 100%;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
+    color: #fff;
+}
+#edit-profile .profile-update a:hover {
+	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
+	/*background: #7abb55;*/
+	transition: 3s;
+	color: #fff;
+}
+
