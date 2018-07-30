@@ -1161,102 +1161,6 @@ a.alert_message:hover{color : grey;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and ( max-width: 769px ){
 
 .carousel-control-prev span, .carousel-control-next span {
@@ -1353,7 +1257,7 @@ a.alert_message:hover{color : grey;}
 
 /* Style the checkmark/indicator */
 .form-check-label .checkmark:after {
-    left: 9px;
+    left: 10px;
     top: 5px;
     width: 5px;
     height: 10px;
