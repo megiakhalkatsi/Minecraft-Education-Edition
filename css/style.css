@@ -1888,3 +1888,50 @@ display: block;
 	color: #fff;
 }
 
+
+/*create a lesson - page*/
+
+#create-lesson {
+	font-family: glaho;
+}
+#create-lesson .characters {
+	display: inherit; 
+}
+
+#create-lesson .user-roles span{
+	font-size: 24px;
+}
+
+#create-description label {
+	font-size: 24px;
+}
+#lesson-plan-create label {
+	font-size: 24px;
+}
+#create-lesson .form-control{
+	width: 100%!important;
+	height: 55px;
+	font-size: 18px;
+}
+#create-lesson .myfile {
+	display: block;
+}
+
+#create-lesson .publish a{
+	/*margin-top: 20px;*/
+	font-weight: bold;
+    display: block;
+    width: 100%;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background: linear-gradient(to bottom, #8f6ada 0%, #5c3baf 100%);
+    color: #fff;
+}
+#create-lesson .publish a:hover {
+	background: linear-gradient(to bottom, #7abb55 0%, green 100%);
+	/*background: #7abb55;*/
+	transition: 3s;
+	color: #fff;
+}
